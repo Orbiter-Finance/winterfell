@@ -74,7 +74,7 @@ impl FieldElement for BaseElement {
     type PositiveInteger = U256;
     type BaseField = Self;
 
-    const EXTENSION_DEGREE: usize = 0;
+    const EXTENSION_DEGREE: usize = 1;
     const ELEMENT_BYTES: usize = ELEMENT_BYTES;
     const IS_CANONICAL: bool = true;
 
@@ -128,7 +128,7 @@ impl FieldElement for BaseElement {
     }
 
     fn slice_from_base_elements(elements: &[Self::BaseField]) -> &[Self] {
-        todo!()
+        elements
     }
 }
 
